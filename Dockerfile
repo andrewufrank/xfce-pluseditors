@@ -1,5 +1,5 @@
 # buildx with 
-#docker buildx build -t andrewufrank/xfce-pluseditors:v1.1 --platform linux/arm/v7,linux/arm64,linux/amd64  --push .
+# docker buildx build -t andrewufrank/xfce-pluseditors:deb10.1.x1.1.e1 --platform linux/arm/v7,linux/arm64,linux/amd64  --push .
 
 # include a set of always used gui based tools
 
@@ -22,7 +22,7 @@
 #
 # Look at x11docker --help for further options.
 
-FROM andrewufrank/xfce-plusone:v1
+FROM andrewufrank/xfce-plusone:deb10.1.x1.1
 
 RUN apt-get update &&  \ 
     env DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
